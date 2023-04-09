@@ -1,0 +1,41 @@
+Pre-requisites
+To run this application, you need to have the following installed on your machine:
+
+Java Development Kit (JDK) 11 or later
+Maven build tool
+Git version control system
+A web browser (for testing the RESTful endpoint)
+Clone the repository
+To get started, clone the Git repository that contains the application code:
+
+
+git clone https://github.com/your-username/your-repo-name.git
+Replace your-username and your-repo-name with your own GitHub username and repository name, respectively.
+
+Build the application
+Once you have cloned the repository, navigate to the project directory and build the application using Maven:
+
+
+cd your-repo-name mvn clean install
+This command will build the application and run all the tests to ensure everything is working correctly.
+
+Run the application
+To start the application, use the following Maven command:
+
+
+mvn spring-boot:run
+This command will start the Spring Boot application and make it available at http://localhost:8080. You should see some output in the console indicating that the application has started successfully.
+
+Test the RESTful endpoint
+To test the RESTful endpoint that calculates the reward points earned by customers, open a web browser and enter the following URL:
+
+http://localhost:8080/rewards
+This will send a GET request to the /rewards endpoint of the application, which should return a JSON object containing the reward points earned by each customer for their transactions.
+
+You can also use a tool like Postman to test the endpoint by sending HTTP requests with various parameters and checking the responses.
+
+Customize the application
+If you want to customize the application to use a different database, modify the configuration files in the src/main/resources directory. You can also modify the code in the com.example.rewards package to add new features or change the behavior of the application.
+
+Conclusion
+That's it! You now have a working Spring Boot application that calculates reward points earned by customers for their transactions, and you know how to run it and test it. Feel free to explore the code and experiment with different scenarios to see how the application behaves.
